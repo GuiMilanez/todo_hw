@@ -1,0 +1,13 @@
+<div class="container">
+<p><%= notice %></p>
+
+<p class="jumbotron">
+  <strong>Description:</strong>
+  <%= @todo_item.description.titleize %>
+</p>
+
+<div style="padding-top:20px">
+<button class="btn btn-outline-primary" ><%= link_to 'Edit', edit_todo_item_path(@todo_item) %></button>
+<button class="btn btn-outline-primary" ><%= link_to 'Back', todo_items_path %></button>
+</div>
+</div>
